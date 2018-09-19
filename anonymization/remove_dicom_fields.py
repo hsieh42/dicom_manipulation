@@ -37,7 +37,7 @@ logger.addHandler(ch)
 
 _source_dir, _ = os.path.split(__file__)
 _dicom_tag_file = os.path.join(_source_dir, 'dicom_anon_tags.csv')
-_df = read_csv(_dicom_tag_file, converters = {'Tag': _int_from_hex}, skipfooter = 2)
+_df = read_csv(_dicom_tag_file, converters = {'Tag': _int_from_hex}, engine='python', skipfooter = 2)
 
 _fields_subject_to_anonymize=[]
 _fields_subject_to_anonymize_string=[]
@@ -150,6 +150,7 @@ def write_to_csv(fname, array, header, subject):
     header = list(header)
     header.insert(0, 'Image')
 
+    # file locking mechanism. A process/thread would only write to fname only if it can acquire the lock.
     lock = lockfile.FileLock(fname)
     lock.timeout = 200
     try:
