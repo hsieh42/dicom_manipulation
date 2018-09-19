@@ -1,0 +1,6 @@
+numpy
+pydicom<=0.9.9
+matplotlib
+pandas
+lockfile
+scikit-image
