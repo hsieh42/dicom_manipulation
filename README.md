@@ -18,7 +18,7 @@ These codes are developed and tested in python 2.7.x with numpy, pandas, matplot
 ## Usage
 To get usage or help file for each script, please run the command with --help or -h for more detail. For example:
 
-```python
+```bash
 $ ./read_dicom_header.py -h
 usage: read_dicom_header.py [-h] -o OUTPUTCSV [-i INPUTDCM [INPUTDCM ...]]
                             [-l INPUTLIST] [-d INPUTDIR]
