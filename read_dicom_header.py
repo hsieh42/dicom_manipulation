@@ -96,7 +96,7 @@ def main(argv = None):
     elif args.inputlist is not None:
         dcms_all = [line.strip('\n') for line in open(args.inputlist, 'r')]
     elif args.inputdir is not None:
-        dcms_all = glob(os.path.join(args.inputdir, '*.dcm'))
+        dcms_all = glob(os.path.join(args.inputdir, '*'))
     print "%d dicom found" % (len(dcms_all))
     
     print "Collecting dicom header fields..."
