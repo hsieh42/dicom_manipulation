@@ -35,7 +35,8 @@ logger.addHandler(ch)
 ## Basic Application Level Confidentiality Profile Attributes
 ## Annex E, E1 ftp://medical.nema.org/medical/dicom/2008/08_15pu.pdf
 
-_dicom_tag_file = 'dicom_anon_tags.csv'
+_source_dir, _ = os.path.split(__file__)
+_dicom_tag_file = os.path.join(_source_dir, 'dicom_anon_tags.csv')
 _df = read_csv(_dicom_tag_file, converters = {'Tag': _int_from_hex}, skipfooter = 2)
 
 _fields_subject_to_anonymize=[]
@@ -52,7 +53,7 @@ _fields_to_remove, _fields_to_replace, _fields_to_replace_date = _fields_subject
 _fields_to_remove_string, _fields_to_replace_string, _fields_to_replace_date_string = _fields_subject_to_anonymize_string
 
 ## Read CBIG shift pattern
-_pattern_file = 'sample_anonpattern.cfg'
+_pattern_file = _dicom_tag_file = os.path.join(_source_dir, 'sample_anonpattern.cfg')
 with open(_pattern_file, 'r') as _fid:
     _shift_pattern = _fid.readline().strip('\n')
     _date_shift_pattern = _fid.readline()
