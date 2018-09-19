@@ -1,0 +1,59 @@
+AttributeName,Tag,AnonymizedByCBIG
+Instance Creator UID,0x00080014,Keep
+SOP Instance UID,0x00080018,Keep
+Accession Number,0x00080050,Replace
+Institution Name,0x00080080,Remove
+Institution Address,0x00080081,Remove
+Referring Physician’s Name,0x00080090,Remove
+Referring Physician’s Address,0x00080092,Remove
+Referring Physician’s Telephone Numbers,0x00080094,Remove
+Station Name,0x00081010,Remove
+Study Description,0x00081030,Keep
+Series Description,0x0008103E,Keep
+Institutional Department Name,0x00081040,Remove
+Physicians of Record,0x00081048,Remove
+Performing Physicians’ Name,0x00081050,Remove
+Name of Physicians Reading Study,0x00081060,Remove
+Operators’ Name,0x00081070,Remove
+Admitting Diagnoses Description,0x00081080,Remove
+Referenced SOP Instance UID,0x00081155,Remove
+Derivation Description,0x00082111,Remove
+Patient’s Name,0x00100010,Remove
+Patient ID,0x00100020,Replace
+Patient’s Birth Date,0x00100030,Remove
+Patient’s Birth Time,0x00100032,Remove
+Patient’s Sex,0x00100040,Keep
+Other Patient Ids,0x00101000,Replace
+Other Patient Names,0x00101001,Remove
+Patient’s Birth Name,0x00101005,Remove
+Patient’s Age,0x00101010,Keep
+Patient’s Size,0x00101020,Keep
+Patient’s Weight,0x00101030,Keep
+Patient’s Mother's Birth Name,0x00101060,Remove
+Patient’s Address,0x00101040,Remove
+Medical Record Locator,0x00101090,Remove
+Country of Residence,0x00102150,Remove
+Country of Residence,0x00102152,Remove
+Patient's Telephone Numbers,0x00102154,Remove
+Ethnic Group,0x00102160,Remove
+Occupation,0x00102180,Remove
+Additional Patient’s History,0x001021B0,Remove
+Patient's Religious Preference,0x001021F0,Remove
+Patient Comments,0x00104000,Remove
+Device Serial Number,0x00181000,Remove
+Protocol Name,0x00181030,Keep
+Study Instance UID,0x0020000D,Keep
+Series Instance UID,0x0020000E,Keep
+Study ID,0x00200010,Replace
+Frame of Reference UID,0x00200052,Keep
+Synchronization Frame of Reference UID,0x00200200,Keep
+Image Comments,0x00204000,Remove
+Requesting Physician,0x00321032,Remove
+Request Attributes Sequence,0x00400275,Remove
+UID,0x0040A124,Keep
+Content Sequence,0x0040A730,Remove
+Storage Media File-set UID,0x00880140,Keep
+Referenced Frame of Reference UID,0x30060024,Keep
+Related Frame of Reference UID,0x300600C2,Keep
+,,
+Source,ftp://medical.nema.org/medical/dicom/2008/08_15pu.pdf,
